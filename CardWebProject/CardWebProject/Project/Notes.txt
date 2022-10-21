@@ -1,0 +1,7 @@
+﻿
+//monocard Site
+https://lp.monocard.com.br/?utm_term=monocard&utm_campaign=%5BOLD%5D+%5BSEARCH%5D+%5BMAX.CONV%5D+Institucional&utm_source=adwords&utm_medium=ppc&hsa_acc=7710321280&hsa_cam=14463980805&hsa_grp=127880982898&hsa_ad=611676681296&hsa_src=g&hsa_tgt=kwd-767188191792&hsa_kw=monocard&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw-L-ZBhB4EiwA76YzOatdRQE0-lnWxF1nQCW182iA8RjariBnMpgv4xzwQCA4cufRSqccwRoC5J0QAvD_BwE
+
+// observar qual linguagem tem mais suporte para para uso nativo;
+
+//
