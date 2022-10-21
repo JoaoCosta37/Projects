@@ -1,0 +1,82 @@
+﻿
+#tabstrip li {
+    color: #698fff !important;
+}
+/* .tabstrip*/
+.k-tabstrip {
+    border:none;
+    /*border: 4px solid #373737;*/
+}
+
+.k-drag-clue, .k-grid-header, .k-grouping-header, .k-header, .k-menu, .k-panelbar > .k-panelbar-header > .k-link, .k-progressbar, .k-state-highlight, .k-tabstrip, .k-tabstrip-items .k-item, .k-toolbar {
+    background-image: none !important;
+    background-color: #cbd7fa;
+}
+
+.k-tabstrip .k-content.k-active, .k-tabstrip .k-content.k-state-active{
+    background-color: #cbd7fa;
+    color: #2e2e2e;
+}
+/*Form's border*/
+    .k-tabstrip-content, .k-tabstrip > .k-content{
+        border: 4px solid #373737;
+        border-top: none;
+    }
+.k-tabstrip-items .k-active{
+    border: 4px solid #373737!important;
+    border-bottom:none!important;
+}
+.k-block, .k-widget{
+    line-height:inherit;
+}
+/*tabstrip's header - div which contain tab's name  */
+.k-tabstrip-top > .k-tabstrip-items-wrapper {
+    border-bottom: 4px solid !important;
+}
+/* apenas borda do nome da aba*/
+/*.k-tabstrip-items .k-state-active{
+    border-bottom:none;
+}*/
+/*.k-tabstrip-items .k-state-default .k-link, .k-panelbar > li.k-state-default > .k-link {
+        color: rgb(55,55,55) !important;
+        background-color: #fafafa;
+    }*/
+/*div que reune todos os campos do Form*/
+/*.k-block, .k-header, .k-grid-header, .k-toolbar, .k-grouping-header, .k-pager-wrap, .k-button, .k-draghandle, .k-treemap-tile, html .km-pane-wrapper .k-header {
+    border: none;
+    background-color: #cbd7fa !important;
+    background-image: none !important;
+}*/
+/*customização interna do form Active*/
+/*.k-tabstrip .k-content.k-state-active {
+    background-color: #cbd7fa;
+    color: #2e2e2e;
+}*/
+.k-item .k-state-default {
+    background-color: #fafafa !important;
+}
+span.k-datepicker, span.k-timepicker, span.k-datetimepicker, span.k-colorpicker, span.k-numerictextbox, span.k-combobox, span.k-dropdown, .k-toolbar .k-split-button {
+    background-color: #fafafa !important;
+}
+    /*customização do combo-box*/
+.k-popup .k-list .k-item, .k-fieldselector .k-list .k-item {
+    background-color: rgb(70,70,70);
+    color: #698fff;
+}
+.k-input-button, .k-input-button.k-button {
+    height: 100% !important;
+}
+/*customização dos combo-box - selected*/
+.k-state-selected, .k-state-selected:link, .k-state-selected:visited, .k-list > .k-state-selected, .k-list > .k-state-highlight, .k-panel > .k-state-selected, .k-ghost-splitbar-vertical, .k-ghost-splitbar-horizontal, .k-draghandle.k-state-selected:hover, .k-scheduler .k-scheduler-toolbar .k-state-selected, .k-scheduler .k-today.k-state-selected, .k-marquee-color {
+    color: #fff;
+    background-color: rgb(55 55 55) !important;
+    border-color: #698fff;
+}
+
+.input-container .k-state-hover {
+    box-shadow: inset 0 0 .2em #698fff !important;
+}
+/*elemento que o from cria no nome de cada tap que forma uma margem - display none para poder matar esse componente*/
+.k-tabstrip-items .k-loading.k-complete {
+    display: none;
+}

@@ -1,0 +1,188 @@
+﻿@using Newtonsoft.Json
+@{
+    ViewData["Title"] = "Cadastro de Família";
+}
+<link rel="stylesheet" href="~/css/pages.css" />
+<link rel="stylesheet" href="~/css/components.css" />
+<link rel="stylesheet" href="~/css/tab-strip-custom.css" />
+
+@using (Html.BeginForm("Salvar", "CadastroFamilia", FormMethod.Post, new { id = "formFamilia" }))
+{
+
+    <div class="form">
+        <div class="form-head">
+        </div>
+        <div class="form-body">
+        </div>
+        <div class="title">Ficha de Cadastro de Família</div>
+        <div class="subtitle">* campos com preenchimento obrigatório</div>
+
+
+
+        <div id="tabstrip">
+            <ul>
+                <li class="k-active">
+                    Dados do Responsável
+                </li>
+                <li>
+                    Endereço
+                </li>
+                <li>
+                    Informações da Família
+                </li>
+            </ul>
+
+            <div>
+                <div class="input-container ic1">
+                    <label class="component-name">Nome Completo</label>
+                    <input id="nome" name="Responsavel.Nome" class="input" type="text" MaxLength="100" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">RG</label>
+                    <input id="rg" name="Responsavel.Rg" class="input" type="text" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">CPF</label>
+                    <input id="cpf" name="Responsavel.Cpf" class="input" type="text" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Data de Nascimento</label>
+                    <input id="data-nascimento" name="Responsavel.DataNascimento" required class="input special-components-input" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Celular</label>
+                    <input id="phone_number" name="Responsavel.Celular" class="input" type="text" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Telefone</label>
+                    <input id="tel_number" name="Responsavel.Telefone" class="input" type="text" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Sexo</label>
+                    <div class="boxes">
+                        <div class="container-boxes-input">
+                            <input id="sexoMasculino" name="Responsavel.Sexo" type="radio" value="M" class="boxes-input" />
+                            <label for="sexoMasculino" class="textInput"> Masculino </label>
+                        </div>
+                        <div class="container-boxes-input">
+                            <input id="sexoFeminino" name="Responsavel.Sexo" type="radio" value="F" class="boxes-input" />
+                            <label class="textInput" for="sexoFeminino">Feminino</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Sacramentos</label>
+                    <div class="boxes">
+                        <div class="container-boxes-input">
+                            <input id="batizado" type="checkbox" value="true" name="Responsavel.Batizado" class="boxes-input" />
+                            <label class="textInput" for="batizado">Batismo</label>
+                        </div>
+                        <div class="container-boxes-input">
+                            <input id="crismado" type="checkbox" value="true" name="Responsavel.Crismado" class="boxes-input" />
+                            <label class="textInput" for="crismado">Crisma</label>
+                        </div>
+                        <div class="container-boxes-input">
+                            <input id="eucaristia" type="checkbox" value="true" name="Responsavel.PrimeiraEucaristia" class="boxes-input" />
+                            <label class="textInput" for="eucaristia">Eucaristia</label>
+                        </div>
+                        <div class="container-boxes-input">
+                            <input id="matrimonio" type="checkbox" value="true" name="Responsavel.Matrimonio" class="boxes-input" />
+                            <label class="textInput" for="matrimonio">Matrimônio</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Estado Civil</label>
+                    <input id="estado-civil" name="Responsavel.EstadoCivilId" class="input" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Profissão</label>
+                    <input id="profissao" name="Responsavel.Profissao" class="input" type="text" MaxLength="50" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Situaçao Emprego</label>
+                    <input id="situacao-emprego" name="Responsavel.SituacaoEmpregoId" class="input" />
+                </div>
+            </div>
+            <div>
+                <div class="input-container ic1">
+                    <label class="component-name">Endereço</label>
+                    <input id="endereco" name="Endereco" class="input" type="text" MaxLength="150" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Número</label>
+                    <input id="numero" name="NumeroEndereco" class="input" type="text" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">CEP</label>
+                    <input id="cep" name="Cep" class="input" type="text" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Bairro</label>
+                    <input id="bairro" name="Bairro" class="input" type="text" MaxLength="100" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Município</label>
+                    <input id="municipio" name="Municipio" class="input" type="text" MaxLength="20" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Complemento</label>
+                    <input id="complemento" name="Complemento" class="input" type="text" MaxLength="100" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Ponto de Referência</label>
+                    <input id="ponto-referencia" name="PontoReferencia" class="input" type="text" MaxLength="200" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Residência Própria?</label>
+                    <input id="residencia-propria" value="true" name="ResidenciaPropria" type="checkbox" checked />
+                </div>
+            </div>
+            <div>
+                <div class="input-container ic1">
+                    <label class="component-name">Renda Familiar</label>
+                    <input id="renda-familia" name="Renda" class="input" type="text" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Quantidade de moradores na casa</label>
+                    <input id="quantidade-moradores" name="QuantidadeMoradores" class="input" type="text" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Quantidade de Crianças</label>
+                    <input id="quantidade-crianca" name="QuantidadeCriancas" class="input" type="text" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Quantidade de Trabalhadores</label>
+                    <input id="quantidade-trabalhadores" name="QuantidadeTrabalhadores" class="input" type="text" />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">Recebe cesta básica?</label>
+                    <input id="recebe-cesta-basica" value="true" name="EstaRecebendoCestaBasica" type="checkbox" checked />
+                </div>
+                <div class="input-container ic2">
+                    <label class="component-name">História de Vida</label>
+                    <input id="historia-vida" name="RelatoVida" class="input" type="text" MaxLength="500" />
+                </div>
+            </div>
+        </div>
+        <input type="submit" class="submit" />
+
+
+    </div>
+
+}
+
+@section scripts{
+    <script src="~/js/forms-components.js"> </script>
+    <script src="~/js/inserir-familia.js"></script>
+    <script>
+        $(document).ready(function () {
+
+        @Html.Raw(" const situacoesEmpregoData = " + JsonConvert.SerializeObject(ViewData["situacoesEmprego"]))
+        @Html.Raw(" const estadoCivilData = " + JsonConvert.SerializeObject(ViewData["estadoCivil"]))
+
+                createForm(situacoesEmpregoData, estadoCivilData, {});
+        });
+    </script>
+}

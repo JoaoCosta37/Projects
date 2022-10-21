@@ -1,0 +1,41 @@
+﻿atividades João:
+
+https://demos.telerik.com/kendo-ui/datepicker/index
+
+	1 - Checar os campos do form;
+	2 - Layout tela de Inserir;
+	3 - Layout tela de Consulta
+	4 - Criar View Excluir Família;
+	5 - Criar o Editar Pessoa - deixar acesso a essa tela apenas na edição de família, e usar também qaundo estiver
+	adicionando uma família nova.
+
+
+
+Atividades Rafael:
+	
+	
+
+Backlogs:
+
+	Inserir Pessoa na Família;
+	Excluir Família;
+	Editar Pessoa;
+	Notificação de sucesso;
+	Login de Usuário - tipos de acesso;
+	Cadastro de Paróquia;
+	Registro Mensal de retirada de cesta básica;
+		Criar Data Base:
+			- ID da pessoa;
+			- ID da familia;
+			- Data de retirada;
+			- ID da paroquia;
+		Tabela de família:
+			- vincular a uma paróquia ID_PAROQUIA
+	Relatórios:
+		Cestas entregues;
+		Cestas a entregar;
+		Sacramentos;
+
+
+Modelo para eventuais modificações no Layout no Form
+https://www.toyota.com.br/leads/

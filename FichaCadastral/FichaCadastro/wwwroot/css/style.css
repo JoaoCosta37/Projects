@@ -1,0 +1,187 @@
+﻿/*palhetas defs cores auxiliares:
+background: linear-gradient(270deg, rgba(83,115,255,1) 6%, rgba(112,150,255,1) 21%, rgba(166,188,249,1) 38%);
+    #698fff
+background: linear-gradient(90deg, rgba(55,55,55,1) 12%, rgba(53,58,73,1) 30%, rgba(96,104,130,1) 66%, rgba(170,175,187,1) 88%);*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+body {
+    background-color: #d1dcfa8c;
+    color: #ff9900;
+    overflow: hidden;
+}
+
+.navbar {
+    height: 56px;
+    display: flex;
+    padding: 0 2rem;
+    margin: 0;
+    justify-content: start;
+    align-items: center;
+    background-color: rgb(55,55,55);
+    box-shadow: 0 .1em .6em #02144880;
+    z-index: 10;
+    border-bottom: 1px inset #698fff;
+}
+
+    .navbar .nav-items {
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+        .navbar .nav-items .logo-section {
+        }
+
+            .navbar .nav-items .logo-section .navbar-title {
+                display: flex;
+                flex-direction: row;
+                font-size: 1.8em;
+                justify-content: center;
+                align-items: center;
+                color: #698fff;
+            }
+
+            .navbar .nav-items .logo-section a {
+                text-decoration: none;
+            }
+
+        .navbar .nav-items .items-section {
+            display: flex;
+            margin-left: 30px;
+        }
+
+
+            .navbar .nav-items .items-section .nav-item {
+                height: 36px;
+                width: 175px;
+                margin: 5px;
+                font-size: 1em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                white-space: nowrap;
+                cursor: pointer;
+                border: 2px inset;
+                border-bottom: none;
+                border-color: #698fff;
+                border-radius:3px;
+                background-color: rgb(55,55,55);
+                color: #698fff;
+                list-style-type: none;
+                position: relative;
+            }
+
+            .navbar .nav-items .items-section .item-son {
+                margin: 5px;
+                width: 230px;
+                position: absolute;
+                flex-direction: column;
+                justify-content: start;
+                border: 2px inset;
+                border-top: none;
+                border-color: #698fff;
+                display: none;
+            }
+
+
+            .navbar .nav-items .items-section .son-active {
+                display: flex !important;
+            }
+
+            .navbar .nav-items .items-section .item-son .sub-item {
+                margin: 0;
+                padding: 10px 0 10px 10px;
+                border: none;
+                background-color: rgb(70,70,70);
+                color: #698fff;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+            }
+
+.mouse-move {
+    box-shadow: inset 0 0 .2em #698fff !important;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 100%;
+    height: calc(100vh - 56px);
+    display: flex;
+    font-size: 1em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.content-container {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+/*
+.navigation-container {
+    height: 100%;
+    background: linear-gradient(0deg, rgba(65,100,255,1) 5%, rgba(91,133,250,1) 20%, rgba(166,188,249,1) 65%);
+    box-shadow: 0 0 2em #a6bcf9;
+    position: absolute;
+    z-index: 9;
+}
+
+    .navigation-container .project-navigation {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        transition-duration: 200ms;
+    }
+
+
+        .navigation-container .project-navigation .navigation-section {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+            .navigation-container .project-navigation .navigation-section .item {
+                height: 41px;
+                width: 210px;
+                margin: 30px;
+                font-size: 1em;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                white-space: nowrap;
+                cursor: pointer;
+                border: none;
+                box-shadow: 0 0 1em #ff9900;
+                background-color: #fafafa;
+                color: #0000ff;
+                text-decoration: none;
+            }
+
+            .navigation-container .project-navigation .navigation-section .sub-item {
+                height: 45px;
+                width: 200px;
+                margin: 20px 25px;
+                font-size: .9em;
+                display: none;
+                justify-content: center;
+                overflow: hidden;
+                white-space: nowrap;
+                cursor: pointer;
+                border: none;
+                box-shadow: 0 0 1em #ff9900;
+            }
+*/

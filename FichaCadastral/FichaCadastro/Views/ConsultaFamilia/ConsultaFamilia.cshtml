@@ -1,0 +1,42 @@
+﻿@using Newtonsoft.Json
+
+@{
+    ViewData["Title"] = "Consultar Família";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.css" />
+<link rel="stylesheet" href="~/css/style.css" />
+<link rel="stylesheet" href="~/css/query-pages.css" />
+
+
+
+
+<div class="grid-container">
+
+
+    <div id="grid-familia"></div>
+
+
+</div>
+
+@section scripts{
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/handsontable/dist/handsontable.full.min.js"></script>
+<script src="~/js/consulta-familia.js"> </script>
+
+<script>
+
+
+    $(document).ready(function() {
+        @Html.Raw(" const data = " + JsonConvert.SerializeObject(Model))
+
+         createGrid(data);
+
+
+    });
+
+
+
+</script>
+
+}

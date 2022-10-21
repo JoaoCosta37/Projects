@@ -1,0 +1,9 @@
+﻿.fieldlist {
+    margin: 0 0 -1em;
+    padding: 0;
+}
+
+    .fieldlist li {
+        list-style: none;
+        padding-bottom: 1em;
+    }

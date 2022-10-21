@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FichaCadastro</title>
+    <link href="https://kendo.cdn.telerik.com/2022.2.802/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="https://kendo.cdn.telerik.com/2022.2.802/styles/kendo.default.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-items">
+                <div class="logo-section">
+                    <b><a class="navbar-title" asp-area="" asp-controller="Home" asp-action="Index">Pastoral Social</a></b>
+                </div>
+                <div class=items-section>
+                    <input class="nav-item" type="button" value="Home" onclick="location.href='@Url.Action("Index","Home")'" />
+                    <input class="nav-item" type="button" value="Novo Cadastro" onclick="location.href='@Url.Action("Inserir","CadastroFamilia")'" />
+                    <div>
+                        <input id="consulta" class="nav-item has-son" type="button" value="Consulta"/>
+                        <div class="item-son" id="consulta-son">
+                            <input class="sub-item" type="button" value="Consulta de Família" onclick="location.href='@Url.Action("Consultar","ConsultaFamilia")'" />
+                            <input class="sub-item" type="button" value="Consulta de Pessoa" onclick="location.href='@Url.Action("Consultar","ConsultaPessoa")'" />
+                        </div>
+                    </div>
+                    <input class="nav-item" type="button" value="Nova Pessoa" onclick="location.href='@Url.Action("Inserir","CadastroPessoa")'" />
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="main-container">
+
+        @*<section class="navigation-container">
+            <div class="project-navigation">
+            <div class="navigation-section">
+            <input class="item" type="button" value="Novo Cadastro" onclick="location.href='@Url.Action("Inserir","CadastroFamilia")'" />
+            <input class="item has-son" type="button" value="Consulta" />
+            </div>
+            </div>
+            </section>*@
+        <section class="content-container">
+
+            <div class="page-content">
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+            </div>
+        </section>
+    </section>
+
+
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://kendo.cdn.telerik.com/2022.2.802/js/jquery.min.js"></script>
+    <script type="text/javascript" src="~/js/script.js"></script>
+    <script type="text/javascript" src="~/js/menu-script.js"></script>
+    <script type="text/javascript" src="https://kendo.cdn.telerik.com/2022.2.802/js/kendo.ui.core.min.js"></script>
+    <script type="text/javascript" src="https://kendo.cdn.telerik.com/2022.2.802/js/cultures/kendo.culture.pt-BR.min.js"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
