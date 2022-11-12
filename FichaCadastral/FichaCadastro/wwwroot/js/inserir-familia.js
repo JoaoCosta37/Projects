@@ -25,10 +25,12 @@
         unmaskOnPost: true
     });
 
-    $("#data-nascimento").kendoDatePicker({
+    let widgetDataNascimento = $("#data-nascimento").kendoDatePicker({
         promptChar: " ",
         culture: "pt-BR",
     });
+
+    widgetDataNascimento.input.attr("readonly", true);
 
     $("#phone_number").kendoMaskedTextBox({
         promptChar: " ",
@@ -103,7 +105,8 @@
         e.preventDefault();
         let form = $("#formFamilia");
 
-        let validator = form.kendoValidator().data("kendoValidator");   
+        let validator = form.kendoValidator().data("kendoValidator");
+
 
         if (validator) {
             var resultOfValidation = validator.validate();

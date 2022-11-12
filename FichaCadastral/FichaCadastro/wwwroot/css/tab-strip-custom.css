@@ -32,6 +32,7 @@
 /*tabstrip's header - div which contain tab's name  */
 .k-tabstrip-top > .k-tabstrip-items-wrapper {
     border-bottom: 4px solid !important;
+    padding-bottom: 2px;
 }
 /* apenas borda do nome da aba*/
 /*.k-tabstrip-items .k-state-active{

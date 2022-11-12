@@ -35,7 +35,7 @@
             <div>
                 <div class="input-container ic1">
                     <label class="component-name">Nome Completo</label>
-                    <input id="nome" name="Responsavel.Nome" class="input" type="text" MaxLength="100" />
+                    <input id="nome" name="Responsavel.Nome" required class="input" type="text" MaxLength="100" />
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">RG</label>
@@ -43,11 +43,11 @@
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">CPF</label>
-                    <input id="cpf" name="Responsavel.Cpf" class="input" type="text" />
+                    <input id="cpf" name="Responsavel.Cpf" required class="input" type="text"/>
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">Data de Nascimento</label>
-                    <input id="data-nascimento" name="Responsavel.DataNascimento" required class="input special-components-input" />
+                    <input id="data-nascimento" name="Responsavel.DataNascimento" required class="input special-components-input"/>
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">Celular</label>
@@ -61,7 +61,7 @@
                     <label class="component-name">Sexo</label>
                     <div class="boxes">
                         <div class="container-boxes-input">
-                            <input id="sexoMasculino" name="Responsavel.Sexo" type="radio" value="M" class="boxes-input" />
+                            <input id="sexoMasculino" name="Responsavel.Sexo" type="radio" value="M" class="boxes-input" checked />
                             <label for="sexoMasculino" class="textInput"> Masculino </label>
                         </div>
                         <div class="container-boxes-input">
@@ -94,7 +94,7 @@
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">Estado Civil</label>
-                    <input id="estado-civil" name="Responsavel.EstadoCivilId" class="input" />
+                    <input id="estado-civil" name="Responsavel.EstadoCivilId" required class="input" />
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">Profissão</label>
@@ -108,15 +108,15 @@
             <div>
                 <div class="input-container ic1">
                     <label class="component-name">Endereço</label>
-                    <input id="endereco" name="Endereco" class="input" type="text" MaxLength="150" />
+                    <input id="endereco" name="Endereco" required class="input" type="text" MaxLength="150" />
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">Número</label>
-                    <input id="numero" name="NumeroEndereco" class="input" type="text" />
+                    <input id="numero" name="NumeroEndereco" required class="input" type="text" />
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">CEP</label>
-                    <input id="cep" name="Cep" class="input" type="text" />
+                    <input id="cep" name="Cep" required class="input" type="text" />
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">Bairro</label>
@@ -124,7 +124,7 @@
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">Município</label>
-                    <input id="municipio" name="Municipio" class="input" type="text" MaxLength="20" />
+                    <input id="municipio" name="Municipio" required class="input" type="text" MaxLength="20" />
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">Complemento</label>
@@ -146,11 +146,11 @@
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">Quantidade de moradores na casa</label>
-                    <input id="quantidade-moradores" name="QuantidadeMoradores" class="input" type="text" />
+                    <input id="quantidade-moradores" name="QuantidadeMoradores" required class="input" type="text" />
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">Quantidade de Crianças</label>
-                    <input id="quantidade-crianca" name="QuantidadeCriancas" class="input" type="text" />
+                    <input id="quantidade-crianca" name="QuantidadeCriancas" required class="input" type="text" />
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">Quantidade de Trabalhadores</label>
@@ -158,7 +158,7 @@
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">Recebe cesta básica?</label>
-                    <input id="recebe-cesta-basica" value="true" name="EstaRecebendoCestaBasica" type="checkbox" checked />
+                    <input id="recebe-cesta-basica" value="true" required name="EstaRecebendoCestaBasica" type="checkbox" checked />
                 </div>
                 <div class="input-container ic2">
                     <label class="component-name">História de Vida</label>
